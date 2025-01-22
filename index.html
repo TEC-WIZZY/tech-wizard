@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <img src="solution.psd" alt="Cyber Café Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for services..." onkeyup="searchContent()">
+        </div>
+        <div class="menu">
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-menu">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login" onclick="showPopup()">Login</a></li>
+            </ul>
+        </nav>
+    </div>  
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h1 class="animate-heading">Welcome to Cyber Café</h1>
+            <p>Your one-stop destination for gaming, internet, and more.</p>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>High-Speed Internet</h3>
+                    <p>Enjoy seamless gaming and browsing.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Premium Gaming Zones</h3>
+                    <p>State-of-the-art setups for your gaming pleasure.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Printing & Scanning</h3>
+                    <p>High-quality services at affordable rates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section (Moved above About Us) -->
+        <section id="gallery" class="gallery">
+            <div class="slider">
+                <img src="WALLPAPER 1.jpg" alt="Gallery Image 1">
+                <img src="WALLPAPER 2.jpg" alt="Gallery Image 2">
+                <img src="WALLPAPER 3.jpg" alt="Gallery Image 3">
+                <img src="WALLPAPER 4.jpg" alt="Gallery Image 4">
+                <img src="WALLPAPER 5.jpg" alt="Gallery Image 5">
+            </div>
+            <div class="nav-buttons">
+                <button onclick="moveSlider('prev')">◀</button>
+                <button onclick="moveSlider('next')">▶</button>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-details">
+                We are a leading cyber café providing high-speed internet access, gaming, printing, and scanning services.
+                Our mission is to deliver top-notch service in a comfortable environment for everyone.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact-boxes">
+                <div class="contact-box">
+                    <h3>Call us</h3>
+                    <p>Have any questions? Reach out to us!</p>
+                    <p class="contact-number">+123 456 7890</p>
+                </div>
+                <div class="contact-box">
+                    <h3>Visit us</h3>
+                    <p>1234 Cyber Street, Tech City</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login/Signup Popup -->
+        <div id="popup" class="popup-container">
+            <div class="popup-content">
+                <h2>Login to Your Account</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button>Login</button>
+                <button class="signup-button">Sign Up</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

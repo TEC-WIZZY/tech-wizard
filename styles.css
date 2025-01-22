@@ -1,0 +1,581 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: black;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: black;
+    position: relative;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .logo {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header .logo img {
+    max-width: 70px;
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+header .search-bar {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+header .search-bar input {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 350px;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    transition: width 0.4s ease, background 0.4s ease;
+}
+
+header .search-bar input:focus {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #66ccff;
+}
+
+header .menu {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header .menu .menu-icon {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header .menu .menu-icon:hover {
+    color: #66ccff;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto;
+    transition: right 0.5s ease;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.side-menu nav {
+    padding-top: 60px;
+}
+
+.side-menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu nav ul li {
+    margin: 20px 0;
+}
+
+.side-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.side-menu nav ul li a:hover {
+    color: #66ccff;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home Section */
+.home-section {
+    background: url('WEB\ HOME\ PAGE.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.home-section h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    background: #1a1a1a;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-us h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-details ul {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 30px;
+    text-align: center;
+}
+
+footer .login-section {
+    display: none;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: black;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: black;
+    position: relative;
+    z-index: 1000;
+}
+
+header .logo {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header .logo img {
+    max-width: 70px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+header .search-bar {
+    position: relative;
+    width: 350px;
+}
+
+header .search-bar input {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 18px;
+    transition: width 0.4s ease, background 0.4s ease;
+}
+
+header .search-bar input:focus {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #66ccff;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto;
+    transition: right 0.5s ease;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.side-menu nav {
+    padding-top: 60px;
+}
+
+.side-menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu nav ul li {
+    margin: 20px 0;
+}
+
+.side-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.side-menu nav ul li a:hover {
+    color: #66ccff;
+}
+
+/* Home Section */
+.home-section {
+    background: url('WEB HOME PAGE.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.home-section h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    animation: fadeInText 1s ease-out;
+}
+
+.home-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #ccc;
+    animation: fadeInText 1.5s ease-out;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
+.feature-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #ddd;
+}
+
+/* About Us Section */
+.about-us {
+    background: linear-gradient(135deg, #333, #444);
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-us .about-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeInText 1s ease-out;
+}
+
+.about-us .about-details {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Gallery Section */
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    height: 300px;
+    animation: fadeIn 1s ease-out;
+}
+
+.gallery .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery img {
+    width: 22%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 1%;
+}
+
+.gallery .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.gallery .nav-buttons button {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.gallery .nav-buttons button:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: linear-gradient(135deg, #333, #444);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInText 1s ease-out;
+}
+
+.contact-us .contact-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #66ccff;
+}
+
+.contact-box p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.contact-box .contact-number {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Login/Signup Popup */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup-content {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    animation: popupAnimation 0.5s ease-in-out;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #66ccff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 18px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.popup-content input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #33b5e5;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #33b5e5;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup-content button:hover {
+    background: #29a1c1;
+}
+
+.popup-content .signup-button {
+    background: #ff8c00;
+}
+
+.popup-content .signup-button:hover {
+    background: #e07b00;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popupAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
